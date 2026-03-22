@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --orange-primary: #ea580c; /* Tailwind orange-600 */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth; /* Sections athara scroll eka smooth wenna */
+}
+
+/* --- Oyaage Portfolio Background eka --- */
+.portfolio-bg {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(234, 88, 12, 0.15), transparent 30%),
+    radial-gradient(circle at 85% 30%, rgba(234, 88, 12, 0.1), transparent 30%),
+    radial-gradient(circle at 12% 80%, rgba(234, 88, 12, 0.12), transparent 30%),
+    linear-gradient(170deg, #0b0b0b 0%, #050505 45%, #0f0805 100%);
+  background-attachment: fixed;
+}
+
+/* --- SWIPER CUSTOM STYLES (Dotted navigation orange karanna) --- */
+.swiper-pagination-bullet {
+  background: #52525b !important; /* Zinc color */
+  opacity: 1 !important;
+  width: 8px !important;
+  height: 8px !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--orange-primary) !important;
+  width: 24px !important; /* Active dot eka thawa diga wenawa lassanata */
+  border-radius: 4px !important;
+}
+
+.swiper {
+  padding-bottom: 50px !important; /* Dots walata ida thiyන්න */
+}
+
+/* --- NAV PILL STYLES --- */
+.nav-pill {
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- FORM INPUT STYLES --- */
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.2);
+}
+
+/* --- SELECTION COLOR --- */
+::selection {
+  background-color: rgba(234, 88, 12, 0.3);
+  color: #ffffff;
+}
+
+/* --- CUSTOM SCROLLBAR (Chrome/Safari) --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-primary);
+}
