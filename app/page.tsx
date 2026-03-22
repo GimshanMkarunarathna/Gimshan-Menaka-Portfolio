@@ -33,7 +33,7 @@ const projectsData = [
   },
   {
     title: "VR Zone",
-    img: "/VR Zone.png",
+    img: "/VRZONE.png",
     links: {
       figma: "https://www.figma.com/design/Igb1weSQTUSBkN7CqZJRGV/Untitled?node-id=864-1983&t=jEwKjnvbQMKLTEtw-1",
       research: "#",
